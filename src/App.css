@@ -36,3 +36,107 @@
     transform: rotate(360deg);
   }
 }
+
+.campo-futebol {
+  justify-items: center;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  height: 500px; /* Altura do campo */
+  border: 2px solid green; /* Bordas do campo */
+  background-color: #008000; /* Cor do campo */
+  border-radius: 10px; /* Bordas arredondadas */
+  color: #fff;
+}
+
+.jogador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+}
+
+.jogador-imagem {
+  width: 60px; /* Tamanho da imagem do jogador */
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.goleiro {
+  top: 0%;
+  position: relative;
+}
+
+.linha-laterais {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.linha-laterais .jogador {
+  text-align: center;
+}
+
+.linha-zagueiros {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.linha-meio-campistas {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.linha-atacantes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .campo-futebol {
+  }
+
+  .linha-zagueiros {
+    position: relative;
+    top: -25%;
+    justify-content: space-evenly;
+  }
+
+  .linha-laterais {
+    position: relative;
+    top: 15%;
+  }
+
+  .linha-meio-campistas {
+    position: relative;
+    top: -5%;
+    left: 2%;
+  }
+
+  /* .linha-laterais, .linha-zagueiros, .linha-meio-campistas, .linha-atacantes {
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .linha-laterais .jogador,
+  .linha-zagueiros .jogador,
+  .linha-meio-campistas .jogador,
+  .linha-atacantes .jogador {
+    margin: 10px 0;
+  }
+
+  .goleiro div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
