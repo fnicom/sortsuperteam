@@ -43,11 +43,12 @@
   width: 95%;
   margin: 0 auto;
   position: relative;
-  height: 500px; /* Altura do campo */
+  height: 600px; /* Altura do campo */
   border: 2px solid green; /* Bordas do campo */
   background-color: #008000; /* Cor do campo */
   border-radius: 10px; /* Bordas arredondadas */
   color: #fff;
+  font-weight: 800;
 }
 
 .jogador {
@@ -60,8 +61,8 @@
 }
 
 .jogador-imagem {
-  width: 60px; /* Tamanho da imagem do jogador */
-  height: 60px;
+  width: 80px; /* Tamanho da imagem do jogador */
+  height: 80px;
   border-radius: 50%;
   margin-bottom: 5px;
 }
@@ -99,11 +100,14 @@
   width: 100%;
 }
 
+.header-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
-  .campo-futebol {
-  }
-
   .linha-zagueiros {
     position: relative;
     top: -25%;
@@ -140,3 +144,24 @@
     justify-content: center;
   }
 }
+
+button {
+  background: linear-gradient(45deg, #1d3557, #457b9d);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  width: 50%;
+  max-width: 250px;
+  margin: 20px auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
